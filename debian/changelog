@@ -1,0 +1,101 @@
+freehep-chartableconverter-plugin (2.0-10) unstable; urgency=medium
+
+  * Remove patches, that were useless and caused FTBFS in freehep-graphics2d
+    (closes: #871326).
+  * Update Standards-Version to 4.1.0, with small changes.
+
+ -- Giovanni Mascellani <gio@debian.org>  Thu, 28 Sep 2017 11:16:47 +0200
+
+freehep-chartableconverter-plugin (2.0-9) unstable; urgency=medium
+
+  * Team upload.
+
+  [ tony mancill ]
+  * Remove Gabriele Giacone from Uploaders (Closes: #856741)
+
+  [ Emmanuel Bourg ]
+  * Depend on libmaven3-core-java instead of libmaven2-core-java
+  * Standards-Version updated to 4.0.0
+  * Switch to debhelper level 10
+
+ -- Emmanuel Bourg <ebourg@apache.org>  Tue, 01 Aug 2017 10:45:48 +0200
+
+freehep-chartableconverter-plugin (2.0-8) unstable; urgency=medium
+
+  [ Philipp Huebner ]
+  * Added myself as uploader
+  * Switched to source format 3.0 (quilt)
+  * Switched to Debhelper 9
+  * Updated debian/copyright and made it lintian clean
+
+  [ Giovanni Mascellani ]
+  * Remove obsolete lines from gbp.conf.
+  * Move package to priority extra.
+  * Use secure Vcs-* URLs.
+  * Bump Standards-Version to 3.9.8 (no changes required).
+  * Build with debhelper 9 instead of CDBS.
+  * Quit using topgit and remove leftovers.
+  * Remove trivial information in debian/README.source.
+  * Add classpath to the JAR manifest.
+  * Make patches DEP-3 compliant.
+
+ -- Giovanni Mascellani <gio@debian.org>  Thu, 21 Jul 2016 12:10:19 +0200
+
+freehep-chartableconverter-plugin (2.0-7) unstable; urgency=medium
+
+  * Replace removed libplexus-compiler-api-java with
+    libplexus-compiler-java (Closes: #789282).
+  * Make Vcs-* fields canonical.
+  * Set copyright format version to 1.0.
+  * Bump Standards-Version to 3.9.6 (no changes).
+
+ -- Gabriele Giacone <1o5g4r8o@gmail.com>  Sat, 20 Jun 2015 12:46:35 +0200
+
+freehep-chartableconverter-plugin (2.0-6) unstable; urgency=low
+
+  * Added real watch file
+  * Fixed my email address.
+  * Add missing dependency against libmaven-plugin-tools-java
+    (closes: #643499).
+  * Fix some lintian issues, particularly bump Standard-Versions to
+    3.9.2 (no changes required).
+
+ -- Giovanni Mascellani <gio@debian.org>  Sun, 09 Oct 2011 17:51:50 +0200
+
+freehep-chartableconverter-plugin (2.0-5) unstable; urgency=low
+
+  * Moved default-jdk from Build-Depends-Indep to Build-Depends
+
+ -- Gabriele Giacone <1o5g4r8o@gmail.com>  Thu, 04 Mar 2010 00:23:24 +0100
+
+freehep-chartableconverter-plugin (2.0-4) unstable; urgency=low
+
+  * Description slightly fixed (closes: #560373)
+  * debian/copyright: fixed
+  * Standards version bumped to 3.8.4 (no changes needed)
+
+ -- Giovanni Mascellani <mascellani@poisson.phc.unipi.it>  Wed, 03 Feb 2010 11:14:05 +0100
+
+freehep-chartableconverter-plugin (2.0-3) unstable; urgency=low
+
+  * Switched to quilt and topgit patches over upstream code
+  * Adding Gabriele Giacone as comaintainer
+  * Adding plexus-utils as dependency in pom.xml
+
+ -- Giovanni Mascellani <mascellani@poisson.phc.unipi.it>  Tue, 08 Dec 2009 16:35:31 +0100
+
+freehep-chartableconverter-plugin (2.0-2) unstable; urgency=low
+
+  * debian/control: fixed Vcs-* fields
+  * debian/rules: deleted get-orig-source (doesn't work)
+  * debian/{maven.rules,orig-tar.sh}: deleted
+  * Enabling compile time tests
+  * debian/control: typo in long description
+
+ -- Giovanni Mascellani <mascellani@poisson.phc.unipi.it>  Sun, 22 Nov 2009 11:42:48 +0100
+
+freehep-chartableconverter-plugin (2.0-1) unstable; urgency=low
+
+  * Initial release (Closes: #554139)
+
+ -- Giovanni Mascellani <mascellani@poisson.phc.unipi.it>  Tue, 03 Nov 2009 17:53:45 +0100

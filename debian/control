@@ -1,0 +1,29 @@
+Source: freehep-chartableconverter-plugin
+Section: java
+Priority: optional
+Maintainer: Debian Java Maintainers <pkg-java-maintainers@lists.alioth.debian.org>
+Uploaders:
+ Giovanni Mascellani <gio@debian.org>,
+ Philipp Huebner <debalance@debian.org>
+Build-Depends:
+ debhelper (>= 10),
+ default-jdk,
+ libmaven-plugin-tools-java,
+ libmaven3-core-java,
+ libplexus-compiler-java,
+ maven-debian-helper
+Standards-Version: 4.1.0
+Vcs-Git: https://anonscm.debian.org/git/pkg-java/freehep/freehep-chartableconverter-plugin.git
+Vcs-Browser: https://anonscm.debian.org/git/pkg-java/freehep/freehep-chartableconverter-plugin.git
+Homepage: http://java.freehep.org/
+
+Package: libfreehep-chartableconverter-plugin-java
+Architecture: all
+Depends: ${maven:Depends}, ${misc:Depends}
+Recommends: ${maven:OptionalDepends}
+Description: FreeHEP Character Table Converter
+ This maven plugin converts 16 bit Unicode text files into lookup tables.
+ These tables are used by the VectorGraphics package (part of the FreeHEP
+ project) to include and embed fonts in the output formats.
+ .
+ FreeHEP is a collection of Java libraries used in High Energy Physics.

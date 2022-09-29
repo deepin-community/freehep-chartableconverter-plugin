@@ -1,0 +1,3 @@
+org.codehaus.plexus plexus-compiler-api jar s/.*/2.x/ * *
+org.apache.maven s/maven-project/maven-core/ * s/.*/3.x/ * *
+org.apache.maven maven-plugin-api * s/.*/3.x/ * *
